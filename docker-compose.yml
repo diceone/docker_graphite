@@ -19,7 +19,7 @@ elasticsearch:
     - "9300:9300"
 
 web:
-  image: diceone/graphite-web
+  image: diceone/web
   environment:
     CLUSTER_SERVERS: weba:80,webb:80
   ports:
@@ -41,7 +41,7 @@ relay:
     - relayb
 
 weba:
-  image: diceone/graphite-web
+  image: diceone/web
   volumes_from:
     - whisper
   environment:
@@ -100,7 +100,7 @@ cache2a:
   command: --instance=2a
 
 webb:
-  image: diceone/graphite-web
+  image: diceone/web
   volumes_from:
     - whisper
   environment:
