@@ -7,7 +7,7 @@ grafana:
     - elasticsearch
 
 haproxy:
-  image: diceone/graphite-haproxy
+  image: diceone/haproxy
   net: host
   links:
     - relay
