@@ -3,13 +3,20 @@ GEM
   specs:
     diff-lcs (1.2.5)
     eventmachine (1.0.7)
-    faraday (0.9.1)
-      multipart-post (>= 1.2, < 3)
+    faraday (2.14.1)
+      faraday-net_http (>= 2.0, < 3.5)
+      json
+      logger
+    faraday-net_http (3.4.2)
+      net-http (~> 0.5)
     graphite-api (0.1.5)
       eventmachine (>= 0.3.3)
       zscheduler (>= 0.0.3)
+    json (2.18.1)
+    logger (1.7.0)
     multi_json (1.11.0)
-    multipart-post (2.0.0)
+    net-http (0.9.1)
+      uri (>= 0.11.1)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (2.9.2)
@@ -37,6 +44,7 @@ GEM
     specinfra (2.27.0)
       net-scp
       net-ssh
+    uri (1.1.1)
     zscheduler (0.0.6)
       eventmachine
 
